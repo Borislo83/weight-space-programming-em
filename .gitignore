@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+.DS_Store
+*.safetensors
+*.bin
+*.pt
+results/judge_cache/
+results/generations/
+results/harness/*/edit/
+
+# raw model outputs and judged answers stay local (harmful text); only the read-out tables are tracked
+results/*
+!results/*.md
+# private drafts
+notes/bluedot-rapid-grant-draft.md
